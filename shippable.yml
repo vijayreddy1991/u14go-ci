@@ -1,0 +1,15 @@
+language: go
+
+go:
+  - 1.7.6
+  - 1.8.7
+  - 1.9.6
+  - 1.10.2
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u14golall
+    image_tag: master
+    pull: true
+  ci:
+    - go version  
